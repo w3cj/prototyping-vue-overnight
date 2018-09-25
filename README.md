@@ -1,2 +1,33 @@
-# prototyping-vue-overnight
-Code and Notes from our Denver Startup Week Talk
+# Prototyping Overnight with Vue
+
+## Outline
+
+* What is Vue.js
+* Brief History of Vue.js
+* Story: Pinterest for bird watchers is looking to build an app
+  * App: Getting started with the CLI Tool
+  * App: Create app with Vue CLI 3
+* Story: We need to gauge interest in our app
+  * App: Build a landing page using a component framework
+  * App: Hook up email form to mailchimp for email list
+  * App: Deploy with now.sh
+* Story: Users should see a stream of bird watching photos from the iNaturalist API
+  * App: List recent bird watching photos
+  * App: Deploy with now.sh
+  * App: Search bird watching photos
+  * App: View bird sightings on a map
+  * App: Deploy with now.sh
+* Story: Users want to sign up and create their own boards
+  * App: Add Firebase Login
+  * App: Users can create boards (Firebase Firestore)
+  * App: Users can add images to boards
+  * App: Deploy with now.sh
+* Story: We want to A / B test different layouts
+  * App: Integrate Google Analytics to see feature usage
+  * App: Deploy with now.sh
+* Story: We want to know which layouts work by analyzing analytics data
+  * App: Enable the layouts that work best
+* Story: Next steps, where do we go from here?
+  * List of other plugins / modules for Vue
+    * Testing
+    * Mobile - Quasar / Weex / Native Script
