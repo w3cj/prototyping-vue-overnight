@@ -6,12 +6,15 @@
 * Brief History of Vue.js
 * Story: Pinterest for bird watchers is looking to build an app
   * App: Getting started with the CLI Tool
+    * https://cli.vuejs.org/guide/
     * `npm install -g @vue/cli`
   * App: Create app with Vue CLI 3
     * `vue ui`
 * Story: We need to gauge interest in our app
   * App: Build a landing page using a component framework (Vuetify)
+    * https://vuetifyjs.com/en/
     * `vue add vuetify`
+      * https://www.npmjs.com/package/vue-cli-plugin-vuetify
   * App: Hook up email form to mailchimp for email list
   * App: Deploy with now.sh
 * Story: Users should see a stream of bird watching photos from the iNaturalist API
@@ -29,6 +32,8 @@
   * App: Deploy with now.sh
 * Story: We want to A / B test different layouts
   * App: Integrate Google Analytics to see feature usage
+  * App: Change styles with pre-processor
+    * https://cli.vuejs.org/guide/css.html#pre-processors
   * App: Deploy with now.sh
 * Story: We want to know which layouts work by analyzing analytics data
   * App: Enable the layouts that work best
