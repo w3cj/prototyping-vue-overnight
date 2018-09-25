@@ -10,11 +10,13 @@
     * `npm install -g @vue/cli`
   * App: Create app with Vue CLI 3
     * `vue ui`
+    * `git checkout 01-vue-cli`
 * Story: We need to gauge interest in our app
   * App: Build a landing page using a component framework (Vuetify)
     * https://vuetifyjs.com/en/
     * `vue add vuetify`
       * https://www.npmjs.com/package/vue-cli-plugin-vuetify
+    * `git checkout 02-add-vuetify`
   * App: Hook up email form to mailchimp for email list
   * App: Deploy with now.sh
 * Story: Users should see a stream of bird watching photos from the iNaturalist API
