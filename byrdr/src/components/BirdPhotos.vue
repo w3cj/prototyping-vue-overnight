@@ -69,7 +69,7 @@ export default {
     let photos = [];
     result.forEach((sighting) => {
       photos = photos.concat(sighting.photos.map((p) => {
-        p.title = sighting.taxon.common_name ? sighting.taxon.common_name.name : '';
+        p.title = sighting.species_guess;
         return p;
       }));
     });

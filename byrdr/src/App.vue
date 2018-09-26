@@ -45,7 +45,33 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <BirdPhotos/>
+        <v-tabs
+          centered
+          icons-and-text
+        >
+          <v-tabs-slider color="yellow"></v-tabs-slider>
+          <v-tab href="#bird-photos">
+            Image Stream
+            <v-icon>image</v-icon>
+          </v-tab>
+
+          <v-tab href="#sightings-map">
+            Sightings Map
+            <v-icon>map</v-icon>
+          </v-tab>
+
+          <v-tab-item
+            id="bird-photos"
+          >
+            <BirdPhotos/>
+          </v-tab-item>
+
+          <v-tab-item
+            id="sightings-map"
+          >
+            <SightingsMap/>
+          </v-tab-item>
+        </v-tabs>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -71,11 +97,13 @@
 
 <script>
 import BirdPhotos from '@/components/BirdPhotos';
+import SightingsMap from '@/components/SightingsMap';
 
 export default {
   name: 'App',
   components: {
     BirdPhotos,
+    SightingsMap,
   },
   data() {
     return {
