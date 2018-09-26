@@ -34,7 +34,10 @@
 * Story: Users want to sign up and create their own boards
   * App: Vue Router for login / sign up / home / dashboard
   * App: Add Firebase Login
+    * `git checkout 06-firebase-auth`
   * App: Users can create boards (Firebase Firestore)
+    * https://github.com/gdg-tangier/vue-firestore
+    * `git checkout 07-create-boards`
   * App: Users can add images to boards
   * App: Deploy with now.sh
 * Story: We want to A / B test different layouts
