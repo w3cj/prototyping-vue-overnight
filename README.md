@@ -18,12 +18,14 @@
       * https://www.npmjs.com/package/vue-cli-plugin-vuetify
     * `git checkout 02-add-vuetify`
   * App: Hook up email form to mailchimp for email list
+    * `git checkout 03-add-landing-mailchimp`
   * App: Deploy with now.sh
 * Story: Users should see a stream of bird watching photos from the iNaturalist API
   * App: List recent bird watching photos
     * https://www.inaturalist.org/observations.json?iconic_taxa[]=Aves&d1=2018-09-01
   * App: Deploy with now.sh
   * App: Search bird watching photos
+    * `git checkout 04-stream-bird-photos`
   * App: View bird sightings on a map
   * App: Deploy with now.sh
 * Story: Users want to sign up and create their own boards
