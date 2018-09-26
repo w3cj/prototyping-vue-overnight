@@ -2,7 +2,9 @@
   <v-container fluid>
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
-        <img src="@/assets/web_gbbc_sandhill_crane_3_bob-howdeshell_tn_2012_kk.jpg" alt="Sandhill cranes" class="mb-5">
+        <img
+          src="@/assets/web_gbbc_sandhill_crane_3_bob-howdeshell_tn_2012_kk.jpg"
+          alt="Sandhill cranes" class="mb-5">
         <mailchimp />
       </v-layout>
     </v-slide-y-transition>
@@ -17,8 +19,8 @@ export default {
     msg: String,
   },
   components: {
-    mailchimp
-  }
+    mailchimp,
+  },
 };
 </script>
 
