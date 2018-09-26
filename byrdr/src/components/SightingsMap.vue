@@ -67,6 +67,10 @@ export default {
     }));
     this.markers = markers;
     this.loading = false;
+    this.$ga.page({
+      page: '/',
+      title: 'Sighting Map page',
+    });
   },
   methods: {
     toggleInfoWindow(marker, id) {

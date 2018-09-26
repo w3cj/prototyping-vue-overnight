@@ -75,6 +75,10 @@ export default {
     });
     this.photos = photos;
     this.loading = false;
+    this.$ga.page({
+      page: '/',
+      title: 'Bird Photos page',
+    });
   },
   computed: {
     filteredPhotos() {

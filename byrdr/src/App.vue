@@ -27,6 +27,7 @@
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-btn @click="trackView">Click Me</v-btn>
       <v-spacer></v-spacer>
       <v-btn
         :loading="loggingIn"
@@ -145,6 +146,14 @@ export default {
     async logout() {
       await firebase.auth().signOut();
     },
+    trackView() {
+      this.$ga.screenview('map');
+    },
   },
+  computed: {
+    testing() {
+      return Math.random() > .5
+    }
+  }
 };
 </script>
