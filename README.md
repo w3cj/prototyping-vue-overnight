@@ -40,16 +40,10 @@
     * `git checkout 07-create-boards`
   * App: Users can add images to boards
   * App: Deploy with now.sh
-* Story: We want to A / B test different layouts
-  * App: Integrate Google Analytics to see feature usage
-  * App: Change styles with pre-processor
-    * https://cli.vuejs.org/guide/css.html#pre-processors
-  * App: Deploy with now.sh
-* Story: We want to know which layouts work by analyzing analytics data
-  * App: Enable the layouts that work best
 * Story: Next steps, where do we go from here?
-  * List of other plugins / modules for Vue
+  * Other plugins / modules for Vue
     * Testing
     * Mobile - Quasar / Weex / Native Script
     * Awesome Vue
   * Vue Meetup
+  * Awesome Vue
