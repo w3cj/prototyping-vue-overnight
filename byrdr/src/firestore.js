@@ -1,3 +1,5 @@
+import Vue from 'vue';
+import VueFirestore from 'vue-firestore';
 import firebase from 'firebase';
 
 const firebaseApp = firebase.initializeApp({
@@ -10,6 +12,8 @@ const firebaseApp = firebase.initializeApp({
 });
 
 const firestore = firebaseApp.firestore();
+
+Vue.use(VueFirestore);
 
 firestore.settings({
   timestampsInSnapshots: true,
