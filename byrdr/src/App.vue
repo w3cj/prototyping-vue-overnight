@@ -4,13 +4,13 @@
       app
       :clipped-left="clipped"
     >
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-toolbar-title v-text="title" class="ml-5"></v-toolbar-title>
     </v-toolbar>
     <v-content>
       <HelloWorld/>
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2018</span>
+      <span class="ml-5">&copy; 2018</span>
     </v-footer>
   </v-app>
 </template>
