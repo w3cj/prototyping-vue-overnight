@@ -11,12 +11,25 @@
       <v-list>
         <v-list-tile
           value="true"
+          :to="{ name: 'home' }"
         >
           <v-list-tile-action>
             <v-icon>home</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Bird Sightings</v-list-tile-title>
+            <v-list-tile-title>Home</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile
+          v-if="user"
+          value="true"
+          :to="{ name: 'dashboard' }"
+        >
+          <v-list-tile-action>
+            <v-icon>dashboard</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Dashboard</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -61,33 +74,7 @@
       </v-menu>
     </v-toolbar>
     <v-content>
-      <v-tabs
-        centered
-        icons-and-text
-      >
-        <v-tabs-slider color="yellow"></v-tabs-slider>
-        <v-tab href="#bird-photos">
-          Image Stream
-          <v-icon>image</v-icon>
-        </v-tab>
-
-        <v-tab href="#sightings-map">
-          Sightings Map
-          <v-icon>map</v-icon>
-        </v-tab>
-
-        <v-tab-item
-          id="bird-photos"
-        >
-          <BirdPhotos/>
-        </v-tab-item>
-
-        <v-tab-item
-          id="sightings-map"
-        >
-          <SightingsMap/>
-        </v-tab-item>
-      </v-tabs>
+      <router-view :user="user"></router-view>
     </v-content>
     <v-footer fixed app>
       <span>&copy; 2017</span>
@@ -97,17 +84,10 @@
 
 <script>
 import firebase from 'firebase';
-
-import BirdPhotos from '@/components/BirdPhotos';
-import SightingsMap from '@/components/SightingsMap';
 import firestore from './firestore';
 
 export default {
   name: 'App',
-  components: {
-    BirdPhotos,
-    SightingsMap,
-  },
   firestore: () => ({
     users: firestore.collection('users'),
   }),
@@ -130,6 +110,7 @@ export default {
           photoURL: user.photoURL,
           displayName: user.displayName,
         });
+        this.$router.push('/dashboard');
       } else {
         this.loggingIn = false;
         this.user = null;

@@ -22,41 +22,23 @@
       </v-flex>
       <v-flex
         v-for="photo in filteredPhotos"
-        xs4
+        v-bind="{ [size]: true }"
         :key="photo.id"
       >
-        <v-card>
-          <v-img
-            :src="photo.medium_url"
-            height="600px"
-          >
-            <v-container
-              fill-height
-              fluid
-              pa-2
-            >
-              <v-layout fill-height>
-                <v-flex xs12 align-end flexbox>
-                  <span class="headline white--text" v-text="photo.title"></span>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-img>
-
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn icon :href="photo.native_page_url">
-              <v-icon>bookmark</v-icon>
-            </v-btn>
-          </v-card-actions>
-        </v-card>
+        <Bird :bird="photo" :addBird="addBird" />
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
+import Bird from './Bird';
+
 export default {
+  props: ['size', 'addBird'],
+  components: {
+    Bird,
+  },
   data: () => ({
     loading: true,
     search: '',
@@ -80,7 +62,7 @@ export default {
     filteredPhotos() {
       if (!this.search) return this.photos;
       const regexp = new RegExp(this.search, 'gi');
-      return this.photos.filter(p => p.title.match(regexp));
+      return this.photos.filter(p => p.title && p.title.match(regexp));
     },
   },
 };
