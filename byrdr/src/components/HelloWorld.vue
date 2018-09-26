@@ -8,7 +8,7 @@
             </v-card-title>
             <v-card-text>
               <p>
-                Bird watching taken to a whole new level. Brydr is an app to share all your best signtings, see where all the best spots are, and check out great finds by other byrdrs. 
+                Bird watching taken to a whole new level. Byrdr is an app to share all your best sightings, see where all the best spots are, and check out great finds by other byrdrs.
               </p>
             </v-card-text>
           </v-card>
