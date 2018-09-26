@@ -27,6 +27,7 @@
   * App: Search bird watching photos
     * `git checkout 04-stream-bird-photos`
   * App: View bird sightings on a map
+    * `git checkout 05-map-sightings`
   * App: Deploy with now.sh
 * Story: Users want to sign up and create their own boards
   * App: Vue Router for login / sign up / home / dashboard
