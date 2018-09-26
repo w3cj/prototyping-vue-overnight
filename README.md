@@ -1,5 +1,7 @@
 # Prototyping Overnight with Vue
 
+* Slides are [here](https://docs.google.com/presentation/d/1QC2WoCwPrZRJceL5XGK4ssIK-u6QsYcFlE_1YwmcA4I/edit#slide=id.p1)
+
 ## Outline
 
 * What is Vue.js
