@@ -45,7 +45,7 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <HelloWorld/>
+      <BirdPhotos/>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -70,12 +70,12 @@
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld';
+import BirdPhotos from '@/components/BirdPhotos';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    BirdPhotos,
   },
   data() {
     return {
@@ -89,7 +89,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: 'Byrdr',
     };
   },
 };
